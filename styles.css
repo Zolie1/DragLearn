@@ -1,0 +1,206 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap'); 
+
+
+*{
+    margin:0; 
+    padding: 0; 
+    font-family: 'Poppins', sans-serif; 
+    text-decoration: none;
+    box-sizing: border-box; 
+    border: none;
+    outline: none;
+    scroll-behavior: smooth; 
+    
+}
+
+:root{ 
+    --color1: #3edfcf; 
+    --color2: #3edf51; 
+    --color3: #df3ed4; 
+    --color4: #dfd23e; 
+
+    
+}
+
+html{ 
+    font-size:63%; 
+    overflow-x: hidden;
+}
+
+
+
+.header{ 
+    background-color: white;
+    position:fixed; 
+    top:0; 
+    bottom:0; 
+    width:100%; 
+    padding:2rem 4%; 
+    height: 8vh;
+    display: flex; 
+    justify-content: space-between;
+    z-index: 100;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, 0.1);
+}
+
+section{ 
+    min-height: 100vh;
+    padding:1rem 4% 2rem; 
+}
+
+.header .logo{ 
+    font-size: 2rem;
+    font-weight: 700;
+    color:black; 
+}
+
+.navbar a{ 
+    color:black; 
+    font-size:1.3rem; 
+    margin-left: 1.4rem;
+}
+
+.home{
+    display:flex; 
+    align-items:  center;
+    justify-content: center;
+    height:100vh;
+    background: url(images/img1.jpg);
+}
+
+.home h1{ 
+    font-size: 5rem;
+    text-align: center;
+
+}
+
+.btn{
+    display: inline-block; 
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 1rem 2.8rem;
+    background: var(--color1);
+    color: black; 
+    font-weight: 850;
+    font-size: 2rem;
+    border-radius: 4rem;
+    box-shadow: 0 0 2rem var(--color1);
+    letter-spacing: .1rem;
+    transition: 1s ease;
+    width: 80%;
+    height: 6rem;
+    margin-left: 4rem;
+
+}
+
+.btn:hover{
+    background-color: var(--color1);
+    color: var(--main-color); 
+    letter-spacing: .3rem;
+    
+}
+
+.home .btn{ 
+    margin-top: 3rem;
+
+}
+
+
+.about{ 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem ;
+        
+}
+
+.about h1{ 
+    font-size: 5rem;
+    margin-bottom: 5rem;
+}
+
+.about p{ 
+    font-size: 1.4rem;
+    line-height: 3rem;
+}
+.about img{
+    width: 45vw; 
+    border-radius: 2rem;
+}
+
+.pricing-plajns{
+    width: 100vw; 
+    display: flex; 
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+} 
+
+.pricing-plans h2{ 
+    margin-bottom: 2rem;
+    font-size: 5rem;
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+
+.pricing-plans-container{ 
+    display: flex;
+     
+}
+.pricing-plans-box{ 
+    width: 22%; 
+    border-radius: 2rem;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    margin-left:1rem;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 1rem;
+    line-height: 3rem;
+    transition: 1.5s ease;
+    text-align: center;
+}
+
+.pricing-plans-box:hover{
+    box-shadow: 0 0 10px rgba(50, 225, 210, 0.957);
+    
+    width: 24%; 
+}
+
+
+.pricing-plan-title{ 
+    margin-bottom: 3rem;
+    font-size: 2rem;
+}
+
+.pricing-plan-btn{
+    background-color: var(--color1);
+    border-radius:2rem;
+    padding: 1rem 1rem; 
+    color:black; 
+    margin-top: 5rem;
+    justify-content: center;
+
+}
+
+.pricing-plans-box a{
+    margin-top: 5rem;
+}
+.contact{
+    margin-top: -20rem;
+    text-align: center;
+    background-color: grey;
+    margin-bottom: -50rem;
+}
+.contact h2{ 
+    margin-bottom: 2rem;
+    font-size: 5rem;
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+
+.contact p{
+    font-size: 1.4rem;
+}
