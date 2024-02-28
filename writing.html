@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Writing</title>
+    <link rel="stylesheet" href="styles.css">
+
+
+
+
+    <style>
+        body{
+            overflow:hidden; 
+            margin:0; 
+            padding:0; 
+            background-image: url(images/writing-img1.jpg);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            
+            
+            height:100vh; 
+        }
+
+        .subscription-block{ 
+
+            
+            background-color: rgba(119, 119, 119, 0.85);
+            width: 50%; 
+            height: 10%; 
+            margin: 2rem 3rem 2rem 48%; 
+            text-align: center;
+            align-items: center;
+            justify-content: center;
+            display:block; 
+            padding: 1rem 1rem;
+            border-radius: 2rem;
+
+
+        }
+
+        .subscription-block h1{ 
+            font-size: 4rem;
+            margin-bottom: 3rem;
+        }
+
+        .subscription-block h2{ 
+            font-size: 3rem;
+            font-weight: lighter;
+            margin-bottom: 2rem;
+        }
+
+        .subscription-block p{
+            font-size: 2rem;
+            line-height: 3.5rem;
+            
+        }
+
+        .subscription-block ul{
+            display: inline;
+        }
+
+        .subscription-block li{ 
+            display:flex;
+            align-items: center;
+            padding:.3rem 5rem; 
+            font-size: 1.5rem;
+            justify-content: center;
+        }
+
+        .btn{ 
+            margin-top: 4rem;
+            background-color: #0be6d7;
+            box-shadow: 0 0 2rem white;
+            height: 6rem; 
+            display: box;
+            
+        }
+
+        .btn:hover{
+            background-color: rgb(94, 250, 169);
+            color: black; 
+            letter-spacing: .3rem;   
+        }
+
+        form{ 
+            display: box;
+            margin-top: 2rem;
+        
+
+        }
+
+        form label{ 
+            margin-top: 2rem;
+            font-size: 1.4rem;
+        }
+
+        form input{ 
+            padding: 1rem; 
+            border-radius: 2rem;
+            text-align: center;
+        }
+
+        /*Styles for smaller screens */ 
+
+        @media screen and (max-width:1150px) {
+           .subscription-block{
+            overflow: auto;
+           }
+
+           .subscription-block h1{ 
+            font-size: 3rem;
+           }
+
+           .subscription-block h2{ 
+            font-size: 2rem;
+           }
+            
+           .btn{
+            font-size: 1.6rem;
+            height: 5rem; 
+            padding:.5 .5; 
+           }
+        }
+
+        @media screen and (max-width:800px){ 
+            .btn{
+                font-size: 1.4rem;
+                font-weight: 700;
+                margin-left: 0rem;
+            }
+
+            .subscription-block h2{
+                font-size: 1.6rem;
+            }
+            .subscription-block li{
+                font-size: 1.4rem;
+            }
+
+            form label{ 
+                font-size: 1.4rem;
+            }
+        }
+
+        @media screen and (max-width:500px){ 
+            .btn{
+                font-size: 1.2rem;
+                font-weight: 700;
+             
+                
+            }
+        }
+
+
+    </style>
+</head>
+
+<body>
+
+    <section class="subscription-block" id="subscription-block">
+        <h1>Writing Subcription</h1>
+        <h2>This subcription includes:</h2>
+       
+        <ul>
+            <li>Daily tutoring sessions, excluding weekends</li>
+            <li>Online assessment</li>
+            <li>Tailored sessions</li>
+            <li>Homework support on condtional bases</li>
+        </ul>
+
+        <form action="#" id="subscription-form">
+            <label for="childName">Child's Name:</label><br><br>
+            <input type="text" id="childName" name="childName" placeholder="Enter Child's Name" required><br><br>
+            <label for="childAge">Child's Age</label><br><br>
+            <input type="number" id="childAge" name="childAge" min="0" max="16" required><br>
+            <input id="submit-btn" class="btn" type="submit" value="SUBSCRIBE"><br><br>
+        </form>
+     
+     
+
+        
+
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>

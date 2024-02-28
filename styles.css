@@ -43,6 +43,8 @@ html{
     box-shadow: 0 .5rem 1rem rgba(0, 0, 0, 0.1);
 }
 
+
+
 section{ 
     min-height: 100vh;
     padding:1rem 4% 2rem; 
@@ -51,7 +53,8 @@ section{
 .header .logo{ 
     font-size: 2rem;
     font-weight: 700;
-    color:black; 
+    color:black;
+    width: 20%; 
 }
 
 .navbar a{ 
@@ -66,6 +69,8 @@ section{
     justify-content: center;
     height:100vh;
     background: url(images/img1.jpg);
+    background-size: cover;
+    background-color: rgba(255, 255, 255, 0.5);
 }
 
 .home h1{ 
@@ -204,3 +209,11 @@ section{
 .contact p{
     font-size: 1.4rem;
 }
+
+.subscription-block {
+    background-color: #3edfcf;
+
+}
+
+
+
