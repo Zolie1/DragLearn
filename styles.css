@@ -35,7 +35,7 @@ html{
     top:0; 
     bottom:0; 
     width:100%; 
-    padding:2rem 4%; 
+    padding:1rem 4%; 
     height: 8vh;
     display: flex; 
     justify-content: space-between;
@@ -55,12 +55,20 @@ section{
     font-weight: 700;
     color:black;
     width: 20%;; 
+    
+}
+
+.logo img {
+    max-width: 100%; 
+    height: 5.1rem; 
+    margin-top: -1rem;
 }
 
 .navbar a{ 
-    color:black; 
+    color:rgb(21, 20, 20); 
     font-size:1.3rem; 
     margin-left: 1.4rem;
+    margin-right:.5rem ;
 }
 
 .home{
@@ -76,7 +84,6 @@ section{
 .home h1{ 
     font-size: 5rem;
     text-align: center;
-    border: 1px solid white;
     background-color: black;
     padding: 1rem;
     color:white; 
@@ -98,9 +105,9 @@ section{
     box-shadow: 0 0 2rem var(--color1);
     letter-spacing: .1rem;
     transition: 1s ease;
-    width: 80%;
+    width: 70%;
     height: 6rem;
-    margin-left: 4rem;
+    margin-left: 8rem;
 
 }
 
@@ -163,7 +170,7 @@ section{
     width: 22%; 
     border-radius: 2rem;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
-    margin-left:1rem;
+    margin-left:1.5rem;
     justify-content: center;
     align-items: center;
     padding: 1rem 1rem;
@@ -172,11 +179,70 @@ section{
     text-align: center;
 }
 
+.pricing-plans-box-listening{ 
+    width: 22%; 
+    border-radius: 2rem;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    margin-left:1.5rem;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 1rem;
+    line-height: 3rem;
+    transition: 1.5s ease;
+    text-align: center;
+}
+
+
+.pricing-plans-box-reading{ 
+    width: 22%; 
+    border-radius: 2rem;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    margin-left:1.5rem;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 1rem;
+    line-height: 3rem;
+    transition: 1.5s ease;
+    text-align: center;
+}
+
+.pricing-plans-box-writing{ 
+    width: 22%; 
+    border-radius: 2rem;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    margin-left:1.5rem;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 1rem;
+    line-height: 3rem;
+    transition: 1.5s ease;
+    text-align: center;
+}
 .pricing-plans-box:hover{
     box-shadow: 0 0 10px rgba(50, 225, 210, 0.957);
     
     width: 24%; 
 }
+
+.pricing-plans-box-listening:hover{
+    box-shadow: 0 0 10px var(--color2);
+    
+    width: 24%; 
+}
+
+.pricing-plans-box-reading:hover{
+    box-shadow: 0 0 10px orangered;
+    
+    width: 24%; 
+}
+
+.pricing-plans-box-writing:hover{
+    box-shadow: 0 0 10px var(--color3);
+    
+    width: 24%; 
+}
+
+
 
 
 .pricing-plan-title{ 
@@ -195,6 +261,47 @@ section{
     width: 50%;
 
 }
+
+.pricing-plan-btn-reading{
+    background-color: orangered;
+    border-radius:2rem;
+    padding: 1rem 1rem; 
+    color:black; 
+    margin-top: 5rem;
+    justify-content: center;
+    font-size: 1.4rem;
+    width: 50%;
+
+}
+
+.pricing-plan-btn-listening{
+    background-color: var(--color2);
+    border-radius:2rem;
+    padding: 1rem 1rem; 
+    color:black; 
+    margin-top: 5rem;
+    justify-content: center;
+    font-size: 1.4rem;
+    width: 50%;
+
+}
+
+.pricing-plan-btn-writing{
+    background-color: var(--color3);
+    border-radius:2rem;
+    padding: 1rem 1rem; 
+    color:black; 
+    margin-top: 5rem;
+    justify-content: center;
+    font-size: 1.4rem;
+    width: 50%;
+
+}
+
+
+
+
+
 
 .pricing-plans-box a{
     margin-top: 5rem;
@@ -236,6 +343,6 @@ section{
     .pricing-plan-btn{
         display: block;
         height: 8rem;
-        width: 100%%;
+        width: 100%;
     }
 }
