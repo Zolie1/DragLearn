@@ -25,6 +25,11 @@
 html{ 
     font-size:63%; 
     overflow-x: hidden;
+    
+}
+
+.body{ 
+    overflow-x: hidden;
 }
 
 
@@ -63,12 +68,17 @@ section{
     height: 5.1rem; 
     margin-top: -1rem;
 }
+.navbar{ 
+   display: flex;
+   justify-content: center; 
+
+}
 
 .navbar a{ 
     color:rgb(21, 20, 20); 
     font-size:1.3rem; 
     margin-left: 1.4rem;
-    margin-right:.5rem ;
+    margin-right:1rem ;
 }
 
 .home{
@@ -88,6 +98,7 @@ section{
     padding: 1rem;
     color:white; 
     border-radius: 2rem;
+    margin-top:0; 
 
 }
 
@@ -134,9 +145,16 @@ section{
         
 }
 
+.about .about-content{
+    display: block;
+    width: 50vw; 
+    margin-top: 0;
+}
+
 .about h1{ 
     font-size: 5rem;
-    margin-bottom: 5rem;
+    margin-bottom: 4rem;
+    width:100%;
 }
 
 .about p{ 
@@ -164,7 +182,7 @@ section{
 
 .pricing-plans-container{ 
     display: flex;
-     
+    
 }
 .pricing-plans-box{ 
     width: 22%; 
@@ -177,6 +195,7 @@ section{
     line-height: 3rem;
     transition: 1.5s ease;
     text-align: center;
+    position:relative; 
 }
 
 .pricing-plans-box-listening{ 
@@ -190,6 +209,7 @@ section{
     line-height: 3rem;
     transition: 1.5s ease;
     text-align: center;
+    position: relative;
 }
 
 
@@ -204,6 +224,7 @@ section{
     line-height: 3rem;
     transition: 1.5s ease;
     text-align: center;
+    position: relative;
 }
 
 .pricing-plans-box-writing{ 
@@ -217,36 +238,34 @@ section{
     line-height: 3rem;
     transition: 1.5s ease;
     text-align: center;
+    position: relative;
 }
 .pricing-plans-box:hover{
     box-shadow: 0 0 10px rgba(50, 225, 210, 0.957);
-    
-    width: 24%; 
-}
-
-.pricing-plans-box-listening:hover{
-    box-shadow: 0 0 10px var(--color2);
-    
-    width: 24%; 
+    margin-right: .7rem; 
 }
 
 .pricing-plans-box-reading:hover{
     box-shadow: 0 0 10px orangered;
-    
-    width: 24%; 
+    margin-right: .7rem;
+}
+
+.pricing-plans-box-listening:hover{
+    box-shadow: 0 0 10px var(--color2);
+    margin-right: .7rem;
 }
 
 .pricing-plans-box-writing:hover{
     box-shadow: 0 0 10px var(--color3);
-    
-    width: 24%; 
+    margin-right: .7rem; 
 }
 
 
 
 
 .pricing-plan-title{ 
-    margin-bottom: 3rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
     font-size: 2rem;
 }
 
@@ -258,7 +277,11 @@ section{
     margin-top: 5rem;
     justify-content: center;
     font-size: 1.4rem;
-    width: 50%;
+    width: 50%; 
+    position: absolute;
+    bottom: 2rem;
+    left: 25%;
+    
 
 }
 
@@ -271,7 +294,9 @@ section{
     justify-content: center;
     font-size: 1.4rem;
     width: 50%;
-
+    position: absolute;
+    bottom: 2rem;
+    left: 25%;
 }
 
 .pricing-plan-btn-listening{
@@ -283,7 +308,9 @@ section{
     justify-content: center;
     font-size: 1.4rem;
     width: 50%;
-
+    position: absolute;
+    bottom: 2rem;
+    left: 25%;
 }
 
 .pricing-plan-btn-writing{
@@ -295,7 +322,9 @@ section{
     justify-content: center;
     font-size: 1.4rem;
     width: 50%;
-
+    position: absolute;
+    bottom: 2rem;
+    left:25%; 
 }
 
 
@@ -306,6 +335,33 @@ section{
 .pricing-plans-box a{
     margin-top: 5rem;
 }
+
+.pricing-plans-box i{
+    font-size: 2.4rem;
+    margin-bottom: 1rem;
+    color: var(--color1); 
+    
+}
+
+.pricing-plans-box-reading i{
+    font-size: 2.4rem;
+    margin-bottom: 1rem;
+    color: orangered;
+   
+}
+
+.pricing-plans-box-listening i{
+    font-size: 2.4rem;
+    margin-bottom: 1rem;
+    color: var(--color2);
+}
+
+.pricing-plans-box-writing i{
+    font-size: 2.4rem;
+    margin-bottom: 1rem;
+    color: var(--color3);
+}
+
 .contact{
     margin-top: 0rem;
     text-align: center;
@@ -324,6 +380,12 @@ section{
     font-size: 1.4rem;
 }
 
+.contact i{
+    font-size: 2.4rem ;
+    margin: 1.3rem;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
 .subscription-block {
     background-color: #3edfcf;
 
@@ -331,18 +393,174 @@ section{
 
 
 
-@media screen and (max-width:1300px) {
+
+@media screen and (max-width: 1200px ) {
     .pricing-plan-btn{
-        display: center;
-        height: 5rem;
-        width: 80%;
+        width:80%;
+        left: 10%;
+
+    }
+
+    .pricing-plan-btn-reading{
+        width:80%;
+        left: 10%;
+
+    }    
+    
+    .pricing-plan-btn-listening{
+        width:80%;
+        left: 10%;
+
+    }    
+    
+    .pricing-plan-btn-writing{
+        width:80%;
+        left: 10%;
+
+    }
+
+    
+    .logo img {
+        max-width: 150%; 
+        height: 4rem; 
+        margin-top: -1rem;
+    }
+
+    .navbar a{ 
+        color:rgb(21, 20, 20); 
+        font-size:1.3rem; 
+        margin-left: 1.4rem;
+        margin: 0.2rem;
+        margin-right:1rem ;
+    }
+
+@media screen and (max-width:800px) {
+    .logo img{
+        height:4rem;
+    }
+
+    .navbar a{ 
+        margin: .05rem;
+        margin-left: 1rem;
+    }
+
+    .pricing-plans-container{
+        display: block;
+    }
+
+    .pricing-plans-box{
+        width: 90%;
+        height:50vh; 
+        scroll-behavior: smooth;
+        margin-bottom: 1.6rem;
+    }    
+
+    .pricing-plans-box-reading{
+        width: 90%;
+        height:50vh; 
+        scroll-behavior: smooth;
+        margin-bottom: 1.6rem;
+    }      
+    
+    .pricing-plans-box-listening{
+        width: 90%;
+        height:50vh; 
+        scroll-behavior: smooth;
+        margin-bottom: 1.6rem;
+    }        
+    
+    .pricing-plans-box-writing{
+        width: 90%;
+        height:50vh; 
+        scroll-behavior: smooth;
+        margin-bottom: 1.6rem;
+    }  
+    
+    
+}
+
+
+@media screen and (max-width:500px){
+   
+    .pricing-plans-container{
+        display: block;
+    }
+
+    .pricing-plans-box{
+        width: 90%;
+        height:50vh; 
+        scroll-behavior: smooth;
+        margin-bottom: 1.6rem;
+    }    
+
+    .pricing-plans-box-reading{
+        width: 90%;
+        height:50vh; 
+        scroll-behavior: smooth;
+        margin-bottom: 1.6rem;
+    }      
+    
+    .pricing-plans-box-listening{
+        width: 90%;
+        height:50vh; 
+        scroll-behavior: smooth;
+        margin-bottom: 1.6rem;
+    }        
+    
+    .pricing-plans-box-writing{
+        width: 90%;
+        height:50vh; 
+        scroll-behavior: smooth;
+        margin-bottom: 1.6rem;
+    }    
+
+    .logo img {
+        max-width: 220%; 
+        height: 4rem; 
+        margin-top: -1rem;
+    }
+
+    .navbar a{ 
+        margin: 0.5rem; 
+    }
+
+    .btn{ 
+        margin-left: 5rem;
+    }
+
+    .about img{
+        display: none;
+    }
+
+    .about h1{
+        margin-bottom: 2rem;
+    }
+  
+
+
+}
+
+@media screen and (max-width:300px){
+    .btn{
+        margin-left: 4rem;
+    }
+
+    .pricing-plans-box{
+        height: 50vh;
+    }
+
+    .pricing-plans-box-reading{
+        height: 50vh;
+    }    
+    
+    .pricing-plans-box-listening{
+        height: 50vh;
+    }    
+    
+    .pricing-plans-box-writing{
+        height: 50vh;
     }
 }
 
-@media screen and (max-width:650px) {
-    .pricing-plan-btn{
-        display: block;
-        height: 8rem;
-        width: 100%;
-    }
 }
+
