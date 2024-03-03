@@ -41,7 +41,7 @@ html{
     bottom:0; 
     width:100%; 
     padding:1rem 4%; 
-    height: 8vh;
+    height: 9vh;
     display: flex; 
     justify-content: space-between;
     z-index: 100;
@@ -488,7 +488,7 @@ section{
 
     .pricing-plans-box{
         width: 90%;
-        height:50vh; 
+        height:40vh; 
         scroll-behavior: smooth;
         margin-bottom: 1.6rem;
     }    
